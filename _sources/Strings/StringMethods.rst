@@ -196,12 +196,12 @@ The identifier
 ``greeting`` was introduced to break the operations into a clearer
 sequence of steps. However, since the value of ``greeting`` is only
 referenced once, it can be eliminated with the more concise
-version:
+version. Additionally, we can use an f-string to achieve the same result as the ```format``` method
 
 .. activecode:: ch08_methods4
 
     person = input('Enter your name: ')
-    print('Hello {}!'.format(person))
+    print(f'Hello {person}!')
 
 There can be multiple substitutions, with data of any type.
 Next we use floats.  Try original price $2.50  with a 7% discount:
